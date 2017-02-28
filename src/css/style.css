@@ -1,32 +1,23 @@
-html {}
+html {
+    overflow: auto;
+    height: 100%;
+}
 
 body {
     background-image: url(../images/bg_body.jpg);
     font-family: "Verdana";
     color: #d7cfc8;
-    width: 100%;
-    height: 100%;
-}
-
-h1 {
-    font-family: "Georgia";
-    font-size: 22px;
-    color: #ead4aa;
-}
-
-h2 {
-    font-family: "Georgia";
-    font-size: 18px;
-    color: #fff68d;
+    max-width: 100%;
+    font-size: 11px;
 }
 
 .wrapper {
-    position: relative;
     margin: 0 auto;
     width: 1000px;
 }
 
 header {
+    position: relative;
     height: 160px;
     margin-bottom: 60px;
 }
@@ -41,9 +32,9 @@ header {
     background-color: #fff;
     position: absolute;
     text-align: center;
-    right: 0;
     border-radius: 5px;
-    top: 115px;
+    margin-top: 115px;
+    right: 0;
 }
 
 .mainmenu ul {
@@ -62,19 +53,19 @@ header {
     display: block;
     color: #461500;
     font-family: "Georgia";
-    padding: 15px;
-    25px;
+    padding: 15px 30px;
 }
 
-.menu-item a:hover {
+.mainmenu>.menu-list>.menu-item a:hover {
     background-image: url(../images/bg_menu-item-active.png);
     background-size: cover;
+    border-radius: 5px;
 }
 
 .lang-list {
     position: absolute;
     left: 30px;
-    top: 50px;
+    top: 40px;
 }
 
 .lang-list ul {
@@ -85,7 +76,7 @@ header {
 
 .lang-list li {
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     color: #e8c078;
 }
 
@@ -107,9 +98,8 @@ header {
 .auth {
     position: absolute;
     text-align: center;
-    right: 0;
-    top: ;
-    margin: 50px;
+    right: 30px;
+    top: 40px;
 }
 
 .auth ul {
@@ -120,14 +110,14 @@ header {
 
 .auth-link li {
     display: inline-block;
-    font-size: 11px;
+    font-size: 12px;
     color: #e8d1a4;
 }
 
 .auth-link a {
     font-family: "Georgia";
     color: #fff;
-    ;
+    text-transform: lowercase;
 }
 
 .auth-link:after {
@@ -139,42 +129,111 @@ header {
     content: none;
 }
 
-.promo {
-    position: relative;
-    width: 1000px;
-    background-image:url(../images/bg_promo.png), url(../images/bg_about.png);
-    border-radius: 5px;
-    padding: 30px 20px 30px 145px;
-        
+.auth-link.signin a {
+    color: #e8d1a4;
 }
 
+.promo {
+    position: relative;
+    width: 870px;
+    background-image: url(../images/bg_promo.png);
+    border-radius: 10px;
+    padding: 20px 30px 30px 100px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Georgia";
+    color: #f9da5a;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+}
+
+.promo:before {
+    content: url(../images/bg_about.png);
+    position: absolute;
+    left: 30px;
+    top: 33px;
+}
+
+.promo h1 {
+    margin-bottom: 20px;
+    font-family: "Georgia";
+    font-size: 22px;
+    color: #ead4aa;
+}
+
+.article h2 {
+    margin-bottom: 20px;
+    font-family: "Georgia";
+    font-size: 18px;
+    color: #fff68d;
+}
+
+.article {
+    position: relative;
+    padding-left: 100px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.article img {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
 
 .footer {
     position: relative;
     margin: 0 auto;
     width: 1000px;
-    bottom: 0;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    color: #f9da5a;
+    font-size: 11px;
+    font-family: "Verdana";
+    font-weight: normal;
+    border-top: 0.5px solid;
+    border-top-color: #f9da5a;
 }
 
 .footermenu {
     position: absolute;
-    text-align: center;
     right: 0;
+    bottom: 20px;
 }
 
 .footermenu ul {
+    text-align: center;
     list-style: none;
     font-size: 0;
 }
 
 .footermenu li {
     display: inline-block;
-    font-size: 12px;
-    color: #e8d1a4;
+    font-size: 11px;
 }
 
 .footermenu a {
-    display: block font-family: "Georgia";
-    padding: 0;
-    margin: 0;
+    font-size: 11px;
+    text-decoration: none;
+    color: #d7cfc8;
+    padding: 10px 10px;
+    font-family: "Verdana";
+}
+
+.footermenu>.menu-list li:after {
+    content: '|';
+    margin-left: 5px;
+    color: #d7cfc8;
+}
+
+.footermenu>.menu-list li:last-child:after {
+    content: none;
 }
