@@ -167,11 +167,12 @@ header {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 18px;
     color: #fff68d;
+ 
 }
 
 .article {
     position: relative;
-    padding-left: 100px;
+    padding-left: 120px;
     padding-top: 10px;
     margin-bottom: 40px;
     font-size: 11px;
@@ -185,9 +186,10 @@ header {
     bottom: 0;
     right: 0;
     display: block;
-    width: 80px;
-    height: 80px;
-}
+    width: auto;
+    height:65px;
+   }
+
 
 .footer {
     position: relative;
