@@ -201,8 +201,7 @@ header {
     font-size: 11px;
     font-family: "Verdana", "Arial", sans-serif;
     font-weight: normal;
-    border-top: 0.5px solid;
-    border-top-color: #f9da5a;
+    border-top: 1px solid rgba(215, 182, 73, 0.44);   
 }
 
 .footermenu {
