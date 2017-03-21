@@ -5,7 +5,7 @@ html {
 
 body {
     background-image: url(../images/bg_body.jpg);
-    font-family: "Verdana";
+    font-family: "Verdana", "Arial", sans-serif;
     color: #d7cfc8;
     max-width: 100%;
     font-size: 11px;
@@ -52,7 +52,7 @@ header {
     text-decoration: none;
     display: block;
     color: #461500;
-    font-family: "Georgia";
+    font-family: "Georgia", "Times New Roman", serif;
     padding: 15px 30px;
 }
 
@@ -83,7 +83,7 @@ header {
 .lang-list a {
     text-decoration: none;
     color: #fff;
-    font-family: "Georgia";
+    font-family: "Verdana", "Arial", sans-serif;
 }
 
 .lang-item:after {
@@ -115,7 +115,7 @@ header {
 }
 
 .auth-link a {
-    font-family: "Georgia";
+    font-family: "Verdana", "Arial", sans-serif;
     color: #fff;
     text-transform: lowercase;
 }
@@ -142,7 +142,7 @@ header {
     margin-bottom: 50px;
     font-style: italic;
     font-size: 14px;
-    font-family: "Georgia";
+    font-family:"Georgia", "Times New Roman", serif;
     color: #f9da5a;
     line-height: 22px;
     letter-spacing: 0.5px;
@@ -157,14 +157,14 @@ header {
 
 .promo h1 {
     margin-bottom: 20px;
-    font-family: "Georgia";
+    font-family: "Georgia", "Times New Roman", serif;
     font-size: 22px;
     color: #ead4aa;
 }
 
 .article h2 {
     margin-bottom: 20px;
-    font-family: "Georgia";
+    font-family: "Georgia", "Times New Roman", serif;
     font-size: 18px;
     color: #fff68d;
 }
@@ -197,7 +197,7 @@ header {
     padding-bottom: 20px;
     color: #f9da5a;
     font-size: 11px;
-    font-family: "Verdana";
+    font-family: "Verdana", "Arial", sans-serif;
     font-weight: normal;
     border-top: 0.5px solid;
     border-top-color: #f9da5a;
@@ -225,7 +225,7 @@ header {
     text-decoration: none;
     color: #d7cfc8;
     padding: 10px 10px;
-    font-family: "Verdana";
+    font-family:"Verdana", "Arial", sans-serif;
 }
 
 .footermenu>.menu-list li:after {
